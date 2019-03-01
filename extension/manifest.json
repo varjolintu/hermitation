@@ -1,0 +1,41 @@
+{
+    "manifest_version": 2,
+    "name": "Hermitation",
+    "description": "First Party Isolation extension for Firefox",
+    "version": "0.1",
+    "author": "Sami Vänttinen",
+    "homepage_url": "https://github.com/varjolintu/hermitation",
+    "icons": {
+      "16": "hermitation.svg",
+      "48": "hermitation.svg",
+      "128": "hermitation.svg"
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "hermitation.svg",
+            "38": "hermitation.svg"
+          },
+          "default_title": "Enable/disable First Party Isolation"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
+    },
+    "permissions":
+    [
+        "privacy",
+        "storage",
+        "tabs",
+        "webNavigation"
+    ],
+    "applications": {
+        "gecko": {
+            "strict_min_version": "58.0"
+        }
+    }
+}

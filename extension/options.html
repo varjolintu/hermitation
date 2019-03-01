@@ -1,0 +1,18 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <script src="options.js" defer></script>
+  </head>
+  <body style="padding: 1em; font-size: 14px;">
+    <h2>Hermitation - Settings</h2>
+    <label for="remember">First Party Isolation state: </label>
+    <select id="remember">
+      <option value="remember" selected>Remember previous state (default)</option>
+      <option value="enabled">Always enabled</option>
+      <option value="disabled">Always disabled</option>
+    </select>
+    <p><label for="whitelist">Domain whitelist:</label>
+    <br /><textarea id="whitelist" rows="25" cols="50" wrap="off"></textarea>
+    <br /><button id="saveButton">Save</button>
+  </body>
+</html>
