@@ -8,3 +8,5 @@ First Party Isolation extension for Firefox.
 
 #### Please note
 Domain whitelisting is purely experimental. Firefox's FPI setting is global, so at this point there's no guarantee it can be triggered on/off fast enough when switching tabs.
+
+It can also break various sites that update the content in the background.
